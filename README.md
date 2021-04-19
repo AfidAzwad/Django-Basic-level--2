@@ -1,10 +1,13 @@
 # Django-Basic-level--2
 
-
-
 Project type : smalll
 
+Django version : 3.1
+
 Database: Sqlite3
+
+Database Admin(/admin): username = Azwad
+               password = 12345
 
 Database table name : Student
 
