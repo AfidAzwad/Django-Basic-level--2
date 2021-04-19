@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align = "center"> Using sqlite3 database </h1>
+    <div align = "center"> 
+    <table border="2", align = "center">
+        <h2 align = "center"> Students </h2>
+       <tr>
+           <th>Name</th>
+           <th>Age</th>
+           <th>Department</th>
+       </tr>
+      {% for row in student %}
+      <tr>
+        <th>{{ row.name }}</th>`
+        <th>{{ row.age }}</th>
+        <th>{{ row.dept }}</th>
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+
+    <bUtton> <a href="{% url 'myapp:form' %}">Add Student</a></bUtton>
+     </div>
+
+  <div align = "Right"> 
+    <img src="{% static 'images/image.png' %}" alt="django">
+  </div>
+
+</body>
+</html>
