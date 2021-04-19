@@ -8,7 +8,9 @@ Database: Sqlite3
 
 Database table name : Student
 
-Concepts: 1. Model - View - Template
+Concepts: 
+
+          1. Model - View - Template
 
           2. Django database admin management
           
